@@ -24,13 +24,15 @@ fn guess() {
         println!("guess {}", guess);
 
         let guess_num: i32 = guess.trim().parse::<i32>().unwrap();
+        //.expect("failed to parse");
 
-        println!("guess_num {}", guess_num);
+        // println!("guess_num {}", guess_num);
         println!("count {}", count);
         println!("try left {}", MAX_TRY - (count + 1));
 
         if guess_num == num {
             println!("yep correct");
+            break;
         } else if guess_num != num {
             println!("nope");
         }
