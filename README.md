@@ -1,1 +1,3 @@
-# guessing_game_rs
+# Guessing game
+
+Simple guessing game in rust
